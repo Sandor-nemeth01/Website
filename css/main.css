@@ -1,61 +1,3 @@
-/* =================================================================== 
- *
- *  Stellar v1.0 Main Stylesheet
- *  05-22-2018
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *    ## links
- *  # typography & general theme styles
- *    ## Lists
- *    ## responsive video container
- *    ## floated image
- *    ## tables
- *    ## Spacing 
- *    ## pace.js styles - minimal
- *  # preloader
- *  # forms
- *    ## Style Placeholder Text
- *    ## Change Autocomplete styles in Chrome
- *  # buttons
- *  # additional components
- *    ## alert box
- *    ## additional typo styles
- *    ## skillbars
- *  # reusable and common theme styles
- *    ## display headings
- *  # header styles
- *    ## header logo
- *    ## mobile menu toggle
- *    ## navigation
- *  # home
- *    ## home content
- *    ## home video link
- *    ## home scroll
- *    ## home social
- *    ## home animations
- *  # about
- *  # services
- *  # microsoft
- *  # testimonials
- *  # clients
- *  # adobe
- *  # networking
- *    ## networking button
- *    ## subscribe
- *  # footer
- *    ## copyright
- *    ## go to top
- *
- *
- * =================================================================== */
-
-
-/* ===================================================================
- * # base style overrides
- *
- * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
 }
@@ -84,9 +26,6 @@ body {
   padding: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## links
- * ------------------------------------------------------------------- */
 a {
   color: #F26522;
   -webkit-transition: all 0.3s ease-in-out;
@@ -104,10 +43,6 @@ a:active {
   outline: 0;
 }
 
-/* ===================================================================
- * # typography & general theme styles
- * 
- * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -342,9 +277,6 @@ hr {
   height: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Lists
- * ------------------------------------------------------------------- */
 ol {
   list-style: decimal;
 }
@@ -402,9 +334,6 @@ dd {
   margin: 0 0 0 2rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## responsive video container
- * ------------------------------------------------------------------- */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -423,9 +352,6 @@ dd {
   height: 100%;
 }
 
-/* ------------------------------------------------------------------- 
- * ## floated image
- * ------------------------------------------------------------------- */
 img.pull-right {
   margin: 1.5rem 0 0 3rem;
 }
@@ -434,9 +360,6 @@ img.pull-left {
   margin: 1.5rem 3rem 0 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## tables
- * ------------------------------------------------------------------- */
 table {
   border-width: 0;
   width: 100%;
@@ -476,9 +399,6 @@ td:last-child {
   -webkit-overflow-scrolling: touch;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Spacing 
- * ------------------------------------------------------------------- */
 button,
 .btn {
   margin-bottom: 1.2rem;
@@ -505,9 +425,6 @@ form,
   margin-bottom: 3rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## pace.js styles - minimal
- * ------------------------------------------------------------------- */
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -534,12 +451,6 @@ form,
   display: none;
 }
 
-
-
-/* ===================================================================
- * # preloader 
- *
- * ------------------------------------------------------------------- */
 #preloader {
   position: fixed;
   top: 0;
@@ -635,7 +546,6 @@ form,
 
 }
 
-/* dots fade */
 .dots-fade > div {
   -webkit-animation: dots-fade 1.6s infinite ease;
   animation: dots-fade 1.6s infinite ease;
@@ -680,7 +590,6 @@ form,
 
 }
 
-/* dots pulse */
 .dots-pulse > div {
   -webkit-animation: dots-pulse 1.2s infinite ease;
   animation: dots-pulse 1.2s infinite ease;
@@ -731,11 +640,6 @@ form,
 
 }
 
-
-/* ===================================================================
- * # forms
- *
- * ------------------------------------------------------------------- */
 fieldset {
   border: none;
 }
@@ -813,7 +717,6 @@ select {
   transition: all 0.15s ease-in-out;
 }
 
-/* IE9 and below */
 .oldie .cl-custom-select::after {
   display: none;
 }
@@ -865,19 +768,16 @@ label > input[type="radio"] {
   top: .15rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Style Placeholder Text
- * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
   color: rgba(13, 13, 13, 0.65);
 }
 
 :-moz-placeholder {
-  color: rgba(13, 13, 13, 0.65);  /* Firefox 18- */
+  color: rgba(13, 13, 13, 0.65);  
 }
 
 ::-moz-placeholder {
-  color: rgba(13, 13, 13, 0.65);  /* Firefox 19+ */
+  color: rgba(13, 13, 13, 0.65);  
 }
 
 :-ms-input-placeholder {
@@ -888,9 +788,6 @@ label > input[type="radio"] {
   color: rgba(13, 13, 13, 0.65) !important;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Change Autocomplete styles in Chrome
- * ------------------------------------------------------------------- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus
@@ -905,12 +802,6 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-
-
-/* ===================================================================
- * # buttons
- *
- * ------------------------------------------------------------------- */
 .btn,
 button,
 input[type="submit"],
@@ -953,8 +844,6 @@ input[type="button"]:focus {
   outline: 0;
 }
 
-/* button primary
- * ------------------------------------------------- */
 .btn.btn--primary,
 button.btn--primary,
 input[type="submit"].btn--primary,
@@ -979,8 +868,6 @@ input[type="button"].btn--primary:focus {
   border-color: #ed560e;
 }
 
-/* button modifiers
- * ------------------------------------------------- */
 .btn.full-width,
 button.full-width {
   width: 100%;
@@ -1026,16 +913,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-
-
-/* =================================================================== 
- * # additional components
- *
- * ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
- * ## alert box
- * ------------------------------------------------------------------- */
 .alert-box {
   padding: 2.1rem 4rem 2.1rem 3rem;
   position: relative;
@@ -1078,12 +955,6 @@ input::-moz-focus-inner {
   color: #bba31b;
 }
 
-/* ------------------------------------------------------------------- 
- * ## additional typo styles
- * ------------------------------------------------------------------- */
-
-/* drop cap 
- * ----------------------------------------------- */
 .drop-cap:first-letter {
   float: left;
   margin: 0;
@@ -1097,8 +968,6 @@ input::-moz-focus-inner {
   color: #000000;
 }
 
-/* line definition style 
- * ----------------------------------------------- */
 .lining dt,
 .lining dd {
   display: inline;
@@ -1124,8 +993,6 @@ input::-moz-focus-inner {
   margin-left: -0.2em;
 }
 
-/* dictionary definition style 
- * ----------------------------------------------- */
 .dictionary-style dt {
   display: inline;
   counter-reset: definitions;
@@ -1145,18 +1012,6 @@ input::-moz-focus-inner {
   content: counter(definitions, decimal) ". ";
 }
 
-/** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *    <blockquote>
- *      <p></p>
- *    </blockquote>
- *  </aside>
- *
- * --------------------------------------------------------------------- */
 .pull-quote {
   position: relative;
   padding: 2.1rem 3rem 2.1rem 0px;
@@ -1191,18 +1046,6 @@ input::-moz-focus-inner {
   content: none;
 }
 
-/** 
- * adobe Tab
- * ---------
- * markup:
- *
- * <ul class="adobe-tabs">
- *    <li><a href="#">[value]<em>[name]</em></a></li>
- *  </ul>
- *
- * Extend this object into your markup.
- *
- * --------------------------------------------------------------------- */
 .adobe-tabs {
   padding: 0;
   margin: 3rem 0;
@@ -1243,9 +1086,6 @@ input::-moz-focus-inner {
   font-style: normal;
 }
 
-/* ------------------------------------------------------------------- 
- * ## skillbars
- * ------------------------------------------------------------------- */
 .skill-bars {
   list-style: none;
   margin: 6rem 0 3rem;
@@ -1384,12 +1224,6 @@ input::-moz-focus-inner {
   width: 100%;
 }
 
-
-
-/* ===================================================================
- * # reusable and common theme styles
- *
- * ------------------------------------------------------------------- */
 .wide {
   max-width: 1400px;
 }
@@ -1402,9 +1236,6 @@ input::-moz-focus-inner {
   background-color: #f0eeee;
 }
 
-/* ------------------------------------------------------------------- 
- * ## display headings
- * ------------------------------------------------------------------- */
 .display-1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -1514,10 +1345,6 @@ input::-moz-focus-inner {
   right: 3rem;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * reusable and common theme styles
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1300px) {
   .display-1 {
     font-size: 4.5rem;
@@ -1607,12 +1434,6 @@ input::-moz-focus-inner {
 
 }
 
-
-
-/* ===================================================================
- * # header styles
- *
- * ------------------------------------------------------------------- */
 .s-header {
   width: 100%;
   height: 72px;
@@ -1670,9 +1491,6 @@ input::-moz-focus-inner {
   visibility: visible;
 }
 
-/* -------------------------------------------------------------------
- * ## header logo 
- * ------------------------------------------------------------------- */
 .header-logo {
   display: inline-block;
   position: absolute;
@@ -1701,9 +1519,6 @@ input::-moz-focus-inner {
   transition: all 0.3s ease-in-out;
 }
 
-/* ------------------------------------------------------------------- 
- * ## mobile menu toggle 
- * ------------------------------------------------------------------- */
 .header-menu-toggle {
   display: none;
   position: absolute;
@@ -1806,9 +1621,6 @@ input::-moz-focus-inner {
   transform: rotate(225deg);
 }
 
-/* ------------------------------------------------------------------- 
- * ## navigation 
- * ------------------------------------------------------------------- */
 .header-nav-wrap {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -1844,10 +1656,6 @@ input::-moz-focus-inner {
   color: #FFFFFF;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * header
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:800px) {
   .s-header {
     top: 0;
@@ -1943,9 +1751,6 @@ input::-moz-focus-inner {
 
 }
 
-/* -------------------------------------------------------------------
- * make sure the menu is visible on larger screens
- * ------------------------------------------------------------------- */
 @media only screen and (min-width:801px) {
   .header-nav-wrap {
     display: block !important;
@@ -1953,12 +1758,6 @@ input::-moz-focus-inner {
 
 }
 
-
-
-/* ===================================================================
- * # home
- *
- * ------------------------------------------------------------------- */
 .s-home {
   width: 100%;
   height: 100vh;
@@ -1994,9 +1793,6 @@ input::-moz-focus-inner {
   background: #000000;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home content
- * ------------------------------------------------------------------- */
 .home-content {
   display: table-cell;
   width: 100%;
@@ -2029,9 +1825,6 @@ input::-moz-focus-inner {
   margin-right: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home video link
- * ------------------------------------------------------------------- */
 .home-content__video {
   position: absolute;
   top: 7.2rem;
@@ -2081,9 +1874,6 @@ input::-moz-focus-inner {
   background-color: #F26522;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home scroll
- * ------------------------------------------------------------------- */
 .home-content__scroll {
   position: absolute;
   right: 8rem;
@@ -2123,9 +1913,6 @@ input::-moz-focus-inner {
   top: 50%;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home social
- * ------------------------------------------------------------------- */
 .home-social {
   list-style: none;
   font-family: "Montserrat", sans-serif;
@@ -2212,8 +1999,6 @@ input::-moz-focus-inner {
   transform: scale(1);
 }
 
-/* animate .home-content__main
- * ------------------------------------------------------------------- */
 html.cl-preload .home-content__main {
   opacity: 0;
 }
@@ -2228,11 +2013,6 @@ html.no-csstransitions .home-content__main {
   opacity: 1;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home animations
- * ------------------------------------------------------------------- */
-
-/* fade in */
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -2267,7 +2047,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-/* fade out */
 @-webkit-keyframes fadeOut {
   from {
     opacity: 1;
@@ -2296,10 +2075,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * home
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1600px) {
   .home-content h1 {
     font-size: 6.4rem;
@@ -2503,12 +2278,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
-
-/* ===================================================================
- * # about
- *
- * ------------------------------------------------------------------- */
 .s-about {
   padding-top: 18rem;
   padding-bottom: 18rem;
@@ -2574,11 +2343,6 @@ html.no-csstransitions .home-content__main {
   background-image: url(../images/icons/icon-documentation.svg);
 }
 
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * about
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .s-about {
     padding-top: 16.2rem;
@@ -2645,10 +2409,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-/* ===================================================================
- * # microsoft
- *
- * ------------------------------------------------------------------- */
 .s-microsoft {
   padding-top: 18rem;
   padding-bottom: 18rem;
@@ -2812,10 +2572,6 @@ html.no-csstransitions .home-content__main {
   transform: translate3d(0, 0, 0);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * microsoft
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1400px) {
   .item-folio__title {
     font-size: 1.7rem;
@@ -2864,10 +2620,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-/* ===================================================================
- * # adobe
- *
- * ------------------------------------------------------------------- */
 .s-adobe {
   padding-top: 18rem;
   padding-bottom: 18rem;
@@ -3031,10 +2783,6 @@ html.no-csstransitions .home-content__main {
   transform: translate3d(0, 0, 0);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * adobe
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1400px) {
   .item-folio__title {
     font-size: 1.7rem;
@@ -3083,10 +2831,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-/* ===================================================================
- * # footer
- *
- * ------------------------------------------------------------------- */
 footer {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -3102,9 +2846,6 @@ footer a:visited {
   color: #FFFFFF;
 }
 
-/* ------------------------------------------------------------------- 
- * ## go to top
- * ------------------------------------------------------------------- */
 .cl-go-top {
   position: absolute;
   top: -1px;
@@ -3171,10 +2912,6 @@ footer a:visited {
   top: -165px;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * footer
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .cl-go-top {
     right: 3rem;
