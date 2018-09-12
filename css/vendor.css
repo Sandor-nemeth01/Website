@@ -1,18 +1,3 @@
-/* =================================================================== 
- *
- *  Stellar v1.0 Vendor/Third Party CSS 
- *  05-16-2018
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # animate on scroll 
- *  # slick slider
- *  # lity
- *  # PhotoSwipe main CSS
- *  # PhotoSwipe Skin
- *
- * =================================================================== */
-
 /* ===================================================================
  * # animate on scroll 
  * https://michalsnik.github.io/aos/
@@ -1170,12 +1155,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   transform: perspective(2500px) rotateX(0);
 }
 
-/*# sourceMappingURL=aos.css.map*/
-
-/* ===================================================================
- * # slick slider
- * http://kenwheeler.github.io/slick/
- * ------------------------------------------------------------------- */
 .slick-slider {
   position: relative;
   display: block;
@@ -1536,11 +1515,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
  *   photoswipe.com | MIT license 
  * ------------------------------------------------------------------- */
 
-/*
-    Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
-*/
-
-/* pswp = photoswipe */
 .pswp {
   display: none;
   position: absolute;
@@ -1552,7 +1526,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   -ms-touch-action: none;
   touch-action: none;
   z-index: 1500;
-  -webkit-text-size-adjust: 100%;  /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
+  -webkit-text-size-adjust: 100%;
   -webkit-backface-visibility: hidden;
   outline: none;
 }
@@ -1566,12 +1540,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   max-width: none;
 }
 
-/* style is added when JS option showHideOpacity is set to true */
 .pswp--animate_opacity {
 
-  /* 0.001, because opacity:0 doesn't trigger Paint action, which causes lag at start of transition */
   opacity: 0.001;
-  will-change: opacity;  /* for open/close transition */
+  will-change: opacity;
   -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
 }
@@ -1582,7 +1554,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .pswp--zoom-allowed .pswp__img {
 
-  /* autoprefixer: off */
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
   cursor: zoom-in;
@@ -1590,7 +1561,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .pswp--zoomed-in .pswp__img {
 
-  /* autoprefixer: off */
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
@@ -1598,16 +1568,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .pswp--dragging .pswp__img {
 
-  /* autoprefixer: off */
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
 }
 
-/*
-  Background is added as a separate element.
-  As animating opacity is much faster than animating rgba() background-color.
-*/
 .pswp__bg {
   position: absolute;
   left: 0;
@@ -1642,7 +1607,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   bottom: 0;
 }
 
-/* Prevent selection and tap highlights */
 .pswp__container,
 .pswp__img {
   -webkit-user-select: none;
@@ -1658,13 +1622,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   width: 100%;
   -webkit-transform-origin: left top;
   -ms-transform-origin: left top;
-  transform-origin: left top;  /* for open/close transition */
+  transform-origin: left top; 
   -webkit-transition: -webkit-transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
   transition: transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
 }
 
 .pswp__bg {
-  will-change: opacity;  /* for open/close transition */
+  will-change: opacity; 
   -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
 }
@@ -1697,18 +1661,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   left: 0;
 }
 
-/*
-  stretched thumbnail or div placeholder element (see below)
-  style is added to avoid flickering in webkit/blink when layers overlap
-*/
 .pswp__img--placeholder {
   -webkit-backface-visibility: hidden;
 }
 
-/*
-  div element that matches size of large image
-  large image loads on top of it
-*/
 .pswp__img--placeholder--blank {
   background: #222;
 }
@@ -1720,10 +1676,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   top: 0;
 }
 
-/*
-  Error message appears when image is not loaded
-  (JS option errorMsg controls markup)
-*/
 .pswp__error-msg {
   position: absolute;
   left: 0;
@@ -1741,27 +1693,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   text-decoration: underline;
 }
 
-/* ===================================================================
- * # PhotoSwipe Skin
- *
- * ------------------------------------------------------------------- */
-
-/*
-  Contents:
-
-  1. Buttons
-  2. Share modal and links
-  3. Index indicator ("1 of X" counter)
-  4. Caption
-  5. Loading indicator
-  6. Additional styles (root element, top bar, idle state, hidden state, etc.)
-*/
-
-/* -------------------------------------------------------------------
- * ## 1. buttons
- * ------------------------------------------------------------------- */
-
-/* <button> css reset */
 .pswp__button {
   width: 44px;
   height: 44px;
@@ -1799,10 +1730,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   border: 0;
 }
 
-/* 
-pswp__ui--over-close class it added when mouse is 
-over element that should close gallery 
-*/
 .pswp__ui--over-close .pswp__button--close {
   opacity: 1;
 }
@@ -1818,7 +1745,6 @@ over element that should close gallery
 
 @media (-webkit-min-device-pixel-ratio:1.1), (-webkit-min-device-pixel-ratio:1.09375), (min-resolution:105dpi), (min-resolution:1.1dppx) {
 
-  /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
@@ -1865,16 +1791,11 @@ over element that should close gallery
   background-position: -132px 0;
 }
 
-/* no arrows on touch screens */
 .pswp--touch .pswp__button--arrow--left,
 .pswp--touch .pswp__button--arrow--right {
   visibility: hidden;
 }
 
-/*
-Arrow buttons hit area
-(icon is added to :before pseudo-element)
-*/
 .pswp__button--arrow--left,
 .pswp__button--arrow--right {
   background: none;
@@ -1914,9 +1835,6 @@ Arrow buttons hit area
   background-position: -94px -44px;
 }
 
-/* -------------------------------------------------------------------
- * ## 2. Share modal/popup and links
- * ------------------------------------------------------------------- */
 .pswp__counter,
 .pswp__share-modal {
   -webkit-user-select: none;
@@ -1982,7 +1900,6 @@ Arrow buttons hit area
 
 .pswp__share-tooltip a:first-child {
 
-  /* round corners on the first/last list item */
   border-radius: 3px 3px 0 0;
 }
 
@@ -2000,7 +1917,6 @@ Arrow buttons hit area
   transform: translateY(0);
 }
 
-/* increase size of share links on touch devices */
 .pswp--touch .pswp__share-tooltip a {
   padding: 16px 12px;
 }
@@ -2043,9 +1959,6 @@ a.pswp__share--download:hover {
   background: #DDD;
 }
 
-/* -------------------------------------------------------------------
- * ## 3. Index indicator ("1 of X" counter)
- * ------------------------------------------------------------------- */
 .pswp__counter {
   position: absolute;
   left: 6px;
@@ -2058,9 +1971,6 @@ a.pswp__share--download:hover {
   padding: 0 10px;
 }
 
-/* -------------------------------------------------------------------
- * ## 4. Caption
- * ------------------------------------------------------------------- */
 .pswp__caption {
   position: absolute;
   left: 0;
@@ -2095,15 +2005,10 @@ a.pswp__share--download:hover {
   display: none;
 }
 
-/* Fake caption element, used to calculate height of next/prev image */
 .pswp__caption--fake {
   visibility: hidden;
 }
 
-/* -------------------------------------------------------------------
- * ## 5. Loading indicator (preloader)
- * You can play with it here - http://codepen.io/dimsemenov/pen/yyBWoR
- * ------------------------------------------------------------------- */
 .pswp__preloader {
   width: 44px;
   height: 44px;
@@ -2130,7 +2035,6 @@ a.pswp__share--download:hover {
 
 .pswp__preloader--active .pswp__preloader__icn {
 
-  /* We use .gif in browsers that don't support CSS animation */
   background: url(..images/photoswipe/preloader.gif) 0 0 no-repeat;
 }
 
