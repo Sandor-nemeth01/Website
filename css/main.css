@@ -127,7 +127,7 @@ p.lead {
   color: rgba(0, 0, 0, 0.45);
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1280px) {
   p.lead {
     font-size: 2.2rem;
   }
@@ -1219,7 +1219,7 @@ input::-moz-focus-inner {
 
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1280px) {
   .display-1 {
     font-size: 4.2rem;
   }
@@ -1334,7 +1334,7 @@ input::-moz-focus-inner {
 }
 
 .s-header.sticky > .row {
-  max-width: 1200px;
+  max-width: 1280px;
 }
 
 .s-header.sticky .header-logo {
@@ -1884,7 +1884,7 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1280px) {
   .home-content h1 {
     font-size: 5.6rem;
   }
@@ -2105,7 +2105,7 @@ html.no-csstransitions .home-content__main {
   background-image: url(../images/icons/icon-documentation.svg);
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1280px) {
   .s-personal {
     padding-top: 16.2rem;
     padding-bottom: 16.2rem;
@@ -2185,7 +2185,7 @@ html.no-csstransitions .home-content__main {
 .s-adobe {
   padding-top: 18rem;
   padding-bottom: 18rem;
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
   position: relative;
 }
 
@@ -2202,7 +2202,7 @@ html.no-csstransitions .home-content__main {
   background-color: #FFFFFF;
   position: relative;
 }
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1280px) {
   .s-adobe {
     padding-top: 16.2rem;
   }
@@ -2289,7 +2289,7 @@ footer a:visited {
   top: -165px;
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1280px) {
   .cl-go-top {
     right: 3rem;
   }
